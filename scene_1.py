@@ -47,23 +47,14 @@ def scene_1(screen, duration):
             transparent=True,
             clear=True,
             colour=Screen.COLOUR_GREEN
+        ),
+        Print(
+            screen,
+            StaticRenderer([coffe2]),
+            x=123,
+            y=42,
+            colour=Screen.COLOUR_RED
         )
-    #     Print(
-    #         screen,
-    #         StaticRenderer([tatyana]),
-    #         x=x_t,
-    #         y=y_t,
-    #         clear=True,
-    #         transparent=False,
-    #         colour=Screen.COLOUR_GREEN
-    #     ),
-    #     Print(
-    #         screen,
-    #         FigletText('8', font='doh'),
-    #         x=x_8m8,
-    #         y=y_8m8,
-    #         colour=Screen.COLOUR_BLUE
-    #     ), 2025,
     ]
 
     scene = Scene(effects, duration)
