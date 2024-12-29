@@ -9,10 +9,10 @@ from scene_5 import *
 @ManagedScreen
 def run_the_show(screen=None):
     screen.play([
-        scene_1(screen, 40),
-        # scene_2(screen, 80),
-        # scene_3(screen, 80),
-        # scene_4(screen, 80),
+        scene_1(screen, 80),
+        scene_2(screen, 40),
+        scene_3(screen, 80),
+        scene_4(screen, 80),
         # scene_5(screen, 80),
     ], stop_on_resize=False)
 

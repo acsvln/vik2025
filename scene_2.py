@@ -4,7 +4,6 @@ from asciimatics.effects import Print
 from asciimatics.renderers import FigletText, StaticRenderer
 
 from assets import *
-from utils import *
 
 def scene_2(screen, duration):
     effects = [
