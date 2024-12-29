@@ -1,9 +1,6 @@
 from asciimatics.screen import Screen
 from asciimatics.scene import Scene
-from asciimatics.effects import Print, Effect
-from asciimatics.effects import Print, Sprite
-
-from asciimatics.paths import Path
+from asciimatics.effects import Print
 from asciimatics.renderers import FigletText, StaticRenderer
 
 from assets import *
@@ -26,18 +23,18 @@ def scene_4(screen, duration):
         ),
         Print(
             screen,
-            StaticRenderer([leader_rus]),
+            StaticRenderer([bear_rus]),
             x=100,
             y=19,
             colour=Screen.COLOUR_GREEN,
             clear=True,
-            transparent=False
+            transparent=True
         ),
         Print(
             screen,
             FigletText('The homeland is waiting for you', font='standard', width=160 ),
-            x=0,
-            y=0,
+            x=4,
+            y=2,
             transparent=False,
             clear=True,
             colour=Screen.COLOUR_WHITE,
@@ -55,17 +52,15 @@ def scene_4(screen, duration):
         # ),
         Print(
             screen,
-            FigletText('(mee too)', font='stop', width=160),
-            x=58,
-            y=6,
+            FigletText('mee too...', font='stop', width=160),
+            x=10,
+            y=43, # screen height
             transparent=False,
             clear=True,
             colour=Screen.COLOUR_RED,
             bg=Screen.COLOUR_BLACK
         ),
     ]
-
-
 
     scene = Scene(effects, duration)
 
