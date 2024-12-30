@@ -53,7 +53,7 @@ def scene_5(screen, duration):
         Print(
             screen,
             StaticRenderer( [ happy_new_year_ch ] ),
-            x=int_width2,
+            x=int_width2 + 3,
             y=int_height + 19,
             colour=Screen.COLOUR_GREEN
         ),

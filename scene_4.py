@@ -1,6 +1,6 @@
 from asciimatics.screen import Screen
 from asciimatics.scene import Scene
-from asciimatics.effects import Print
+from asciimatics.effects import Print, Stars
 from asciimatics.renderers import FigletText, StaticRenderer
 
 from assets import *
@@ -40,16 +40,6 @@ def scene_4(screen, duration):
             colour=Screen.COLOUR_WHITE,
             bg=Screen.COLOUR_BLACK
         ),
-        # Print(
-        #     screen,
-        #     FigletText('(mee too)', font='stop', width=160),
-        #     x=58,
-        #     y=6,
-        #     transparent=False,
-        #     clear=True,
-        #     colour=Screen.COLOUR_RED,
-        #     bg=Screen.COLOUR_BLACK
-        # ),
         Print(
             screen,
             FigletText('mee too...', font='stop', width=160),
@@ -60,6 +50,7 @@ def scene_4(screen, duration):
             colour=Screen.COLOUR_RED,
             bg=Screen.COLOUR_BLACK
         ),
+        Stars( screen,200 )
     ]
 
     scene = Scene(effects, duration)
