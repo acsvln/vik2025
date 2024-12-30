@@ -13,7 +13,7 @@ def run_the_show(screen=None):
         scene_2(screen, 40),
         scene_3(screen, 80),
         scene_4(screen, 80),
-        # scene_5(screen, 80),
+        scene_5(screen, -1),
     ], stop_on_resize=False)
 
 
