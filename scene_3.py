@@ -23,8 +23,8 @@ def scene_3(screen, duration):
     path_china.move_straight_to(-50, 30, 60)
 
     path_russia = Path()
-    path_russia.jump_to(x_b + 350, 30)
-    path_russia.move_straight_to(0, 30, 80)
+    path_russia.jump_to(x_b + 350, 26)
+    path_russia.move_straight_to(0, 26, 80)
 
     effects = [
         Sprite(
