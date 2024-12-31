@@ -8,7 +8,6 @@ from utils import *
 
 
 def scene_4(screen, duration):
-    screen_center_x = screen.width // 2
     screen_center_y = screen.height // 2
 
     y_bear = screen_center_y - textBlockHeight(bear_rus) // 2 + 5
@@ -43,7 +42,7 @@ def scene_4(screen, duration):
         ),
         Print(
             screen,
-            FigletText('mee too...', font='stop', width=160),
+            FigletText('me too...', font='stop', width=160),
             x=10,
             y=y_me2,
             transparent=False,
